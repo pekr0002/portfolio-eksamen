@@ -1,0 +1,101 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* general css */
+html {
+  scroll-behavior: smooth;
+  /* css variabler */
+  --sort: #231f20;
+  --hvid: #f4f3ea;
+  --farve1: #f054a5;
+  --farve2: #7b88fa;
+}
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  color: var(--sort);
+  background-color: var(--hvid);
+}
+
+section {
+  padding: 40px 20px;
+}
+
+p {
+  margin: 10px 10px;
+  font-family: "roboto", sans-serif;
+  font-size: 20px;
+}
+
+img {
+  margin: 10px;
+}
+h1 {
+  font-family: "MagazineLetter", sans-serif;
+  font-size: 48px;
+  text-align: center;
+}
+h2 {
+  text-transform: uppercase;
+  font-family: "Alatsi", sans-serif;
+  font-size: 40px;
+}
+
+/* index */
+/* hero */
+#hero {
+  min-height: 95vh;
+}
+
+#hero h2 {
+  font-family: "MagazineLetter", sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.knap {
+  padding: 10px 5px;
+  background-color: var(--sort);
+  color: var(--hvid);
+  width: 100%;
+  font-family: "Alatsi", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  padding: 8px 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: none;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+/* baggrundsfarver*/
+/* lila */
+.lila {
+  background-color: var(--farve2);
+  color: var(--hvid);
+}
+
+/* magazine letter */
+@font-face {
+  font-family: "MagazineLetter";
+  src: url(../font/MagazineLetterByBrntlbrnl-Regular.woff);
+  font-style: normal;
+  font-weight: normal;
+}
+.alatsi-regular {
+  font-family: "Alatsi", serif;
+  font-weight: 400;
+  font-style: normal;
+}

@@ -3,7 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <!-- font -->
+    <!-- Alatsi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet" />
+
+    <!-- roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+
     <title>Forside</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"> Penny Vera </a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="index.html">Om mig</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <h1>Portfolio</h1>
+      <h2>2024</h2>
+      <div class="knap">let's start</div>
+      <a href="om_mig.html">Penny Vera</a>
+    </section>
+    <main>
+      <section id="showcase" class="lila">
+        <h2>det har jeg lavet</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quos consectetur perferendis magni maxime harum dolorem quibusdam amet laudantium vitae necessitatibus accusamus sunt, aut vero quod ipsum exercitationem. Obcaecati explicabo voluptatibus nisi quas perferendis. Voluptatem repellendus et, provident quisquam ducimus voluptatibus rem, necessitatibus odit ex quae repellat alias corporis minus?</p>
+        <!-- showcase, kan bladre -->
+        <img src="img/placeholder.png" alt="" />
+        <button class="knap" onclick="location.href='portfolio.html'">Portfolio</button>
+      </section>
+      <section #mig>
+        <h2>Hvem er jeg?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores suscipit ut fugit quis ex dignissimos praesentium laudantium rem? Hic ipsa recusandae, nemo molestias sed laborum repellat. Eos harum sint suscipit?</p>
+        <img src="img/placeholder.png" alt="" />
+
+        <button class="knap" onclick="location.href='om_mig.html'">om mig</button>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="js/menu.js"></script>
+  </body>
 </html>
