@@ -18,12 +18,16 @@ html {
   --hvid: #f4f3ea;
   --farve1: #f054a5;
   --farve2: #7b88fa;
+  --farve3: #cbd538;
 }
 body {
-  max-width: 1280px;
-  margin: 0 auto;
   color: var(--sort);
   background-color: var(--hvid);
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 section {
@@ -36,13 +40,9 @@ p {
   font-size: 20px;
 }
 
-img {
-  margin: 10px;
-}
 h1 {
   font-family: "MagazineLetter", sans-serif;
   font-size: 48px;
-  text-align: center;
 }
 h2 {
   text-transform: uppercase;
@@ -50,12 +50,31 @@ h2 {
   font-size: 40px;
 }
 
+a {
+  padding: 10px;
+  color: var(--hvid);
+  transition: color 0.3s;
+  text-align: start;
+  font-family: "roboto", sans-serif;
+  font-size: 24px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.tema_nr {
+  text-align: right;
+  font-family: "MagazineLetter", sans-serif;
+  font-size: 50px;
+}
 /* index */
 /* hero */
 #hero {
-  min-height: 95vh;
+  height: 95vh;
 }
 
+#hero h1 {
+  text-align: center;
+}
 #hero h2 {
   font-family: "MagazineLetter", sans-serif;
   font-size: 40px;
@@ -66,25 +85,37 @@ h2 {
   padding: 10px 5px;
   background-color: var(--sort);
   color: var(--hvid);
-  width: 100%;
   font-family: "Alatsi", sans-serif;
   font-size: 40px;
   text-transform: uppercase;
   cursor: pointer;
   text-align: center;
-  padding: 8px 16px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 5px 0px;
   border: none;
-  color: #ffffff;
   transition: 0.3s;
+}
+
+.knap:hover {
+  box-shadow: 6px 6px 0px 0px var(#ff9b29);
+}
+
+.dotdiv {
+  border-top: 3px dotted var(--hvid);
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 /* baggrundsfarver*/
 /* lila */
 .lila {
   background-color: var(--farve2);
-  color: var(--hvid);
+}
+
+.green {
+  background-color: var(--farve3);
+}
+.pink {
+  background-color: var(--farve1);
 }
 
 /* magazine letter */
