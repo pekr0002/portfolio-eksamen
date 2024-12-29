@@ -1,0 +1,24 @@
+/* FOOTER */
+footer {
+  background-color: var(--sort);
+  color: white;
+  padding: 45px 15px;
+}
+.footer-indhold {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-section1 {
+  text-align: left;
+}
+
+.footer-section2 {
+  text-align: right;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+  font-size: 20px;
+}
+/* FOOTER SLUT */

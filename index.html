@@ -7,6 +7,8 @@
     <!-- css -->
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/layout.css" />
     <!-- font -->
     <!-- Alatsi -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,8 +30,8 @@
       <nav>
         <ul class="menu">
           <li><a href="index.html">Forside</a></li>
-          <li><a href="index.html">Portfolio</a></li>
-          <li><a href="index.html">Om mig</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="om_mig.html">Om mig</a></li>
         </ul>
         <div class="burger">
           <div class="line"></div>
@@ -42,7 +44,7 @@
     <section id="hero">
       <h1>Portfolio</h1>
       <h2>2024</h2>
-      <div class="knap">let's start</div>
+      <button class="knap" onclick="location.href='portfolio.html'">Portfolio</button>
       <a href="om_mig.html">Penny Vera</a>
     </section>
     <main>
@@ -61,7 +63,22 @@
         <button class="knap" onclick="location.href='om_mig.html'">om mig</button>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-indhold">
+        <div class="footer-section1">
+          <a href="index.html">forside</a>
+          <a href="portfolio.html">portfolio</a>
+          <a href="om_mig.html">om mig</a>
+        </div>
+        <div class="footer-section2">
+          <a href="tema/t1.html">introuge</a>
+          <a href="tema/t1.html">Grundlæggende web</a>
+          <a href="tema/t1.html">ui ux</a>
+          <a href="tema/t1.html">animation</a>
+          <a href="tema/t1.html">indhold</a>
+        </div>
+      </div>
+    </footer>
     <script src="js/menu.js"></script>
   </body>
 </html>
