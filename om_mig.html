@@ -3,7 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <!-- font -->
+    <!-- Alatsi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet" />
+
+    <!-- roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
     <title>Om mig</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"> Penny Vera </a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="om_mig.html">Om mig</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Hvem er jeg?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt necessitatibus laboriosam ab placeat repellendus! Dolor illum ad accusamus rerum placeat quod quia debitis corporis. Animi dolor ab adipisci atque assumenda!</p>
+        <img src="img/placeholder.png" alt="" />
+      </section>
+      <section class="yellow">
+        <h2>mine erfaringer</h2>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum, consectetur, ducimus corrupti, fuga officiis veritatis ex praesentium vel aliquid necessitatibus. Temporibus dolore ratione aspernatur. Soluta perspiciatis minus quod sequi!
+      </section>
+      <section>
+        <h2>det har jeg brugt min tid på</h2>
+        <dl class="cv">
+          <div class="punkt">
+            <dt>hls</dt>
+            <dd>2010-2020</dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-indhold">
+        <div class="footer-section1">
+          <a href="index.html">forside</a>
+          <a href="portfolio.html">portfolio</a>
+          <a href="om_mig.html">om mig</a>
+        </div>
+        <div class="footer-section2">
+          <a href="tema/t1.html">introuge</a>
+          <a href="tema/t1.html">Grundlæggende web</a>
+          <a href="tema/t1.html">ui ux</a>
+          <a href="tema/t1.html">animation</a>
+          <a href="tema/t1.html">indhold</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/menu.js"></script>
+  </body>
 </html>

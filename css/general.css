@@ -19,6 +19,7 @@ html {
   --farve1: #f054a5;
   --farve2: #7b88fa;
   --farve3: #cbd538;
+  --farve4: #ff9b29;
 }
 body {
   color: var(--sort);
@@ -116,6 +117,10 @@ a {
 }
 .pink {
   background-color: var(--farve1);
+}
+
+.yellow {
+  background-color: var(--farve4);
 }
 
 /* magazine letter */
