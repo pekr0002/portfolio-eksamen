@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
     <!-- font -->
     <!-- Alatsi -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,20 +42,67 @@
       </nav>
     </header>
 
-    <section id="hero">
-      <h1>Portfolio</h1>
-      <h2>2024</h2>
-      <button class="knap" onclick="location.href='portfolio.html'">Portfolio</button>
-      <a href="om_mig.html">Penny Vera</a>
-    </section>
     <main>
+      <section id="hero">
+        <h1>Portfolio</h1>
+        <h2>2024</h2>
+        <button class="knap" onclick="location.href='portfolio.html'">Portfolio</button>
+        <a href="om_mig.html">Penny Vera</a>
+      </section>
+
       <section id="mini_display" class="lila grid_1-1">
         <div class="col1">
           <h2>det har jeg lavet</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quos consectetur perferendis magni maxime harum dolorem quibusdam amet laudantium vitae necessitatibus accusamus sunt, aut vero quod ipsum exercitationem. Obcaecati explicabo voluptatibus nisi quas perferendis. Voluptatem repellendus et, provident quisquam ducimus voluptatibus rem, necessitatibus odit ex quae repellat alias corporis minus?</p>
         </div>
+
         <!-- showcase, kan bladre -->
-        <img src="img/placeholder.png" alt="" />
+        <div id="showcase">
+          <div class="slideshow-container">
+            <div class="mySlides">
+              <div class="numbertext">1 / 5</div>
+              <img src="img/placeholder.png" />
+              <div class="text">Tema 1</div>
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 5</div>
+              <img src="img/placeholder.png" />
+              <div class="text">Tema 2</div>
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 5</div>
+              <img src="img/placeholder.png" />
+              <div class="text">Tema 3</div>
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 5</div>
+              <img src="img/placeholder.png" />
+              <div class="text">Tema 4</div>
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">5 / 5</div>
+              <img src="img/placeholder.png" />
+              <div class="text">Tema 5</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          </div>
+          <br />
+
+          <div class="center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+        </div>
+
         <div class="col2">
           <button class="knap" onclick="location.href='portfolio.html'">Portfolio</button>
         </div>
@@ -87,6 +135,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/carousel.js"></script>
     <script src="js/menu.js"></script>
   </body>
 </html>
