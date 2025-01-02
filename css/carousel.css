@@ -49,7 +49,7 @@
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(255, 0, 191, 0.8);
+  background-color: var(--farve1);
 }
 
 /* Caption text */
@@ -66,7 +66,7 @@
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
+  color: var(--hvid);
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -84,8 +84,8 @@
   display: inline-block;
 }
 
-.active {
-  background-color: #ff00f7;
+#showcase .active {
+  background-color: var(--farve1);
 }
 
 /* On smaller screens, decrease text size */
