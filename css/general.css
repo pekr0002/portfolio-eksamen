@@ -20,6 +20,7 @@ html {
   --farve2: #7b88fa;
   --farve3: #cbd538;
   --farve4: #ff9b29;
+  --farve5: #fabf37;
 }
 body {
   color: var(--sort);
@@ -106,8 +107,11 @@ a {
   margin-bottom: 40px;
 }
 
+/* tema */
+#galleri {
+  padding: 20px;
+}
 /* baggrundsfarver*/
-/* lila */
 .lila {
   background-color: var(--farve2);
 }
@@ -120,7 +124,7 @@ a {
 }
 
 .yellow {
-  background-color: var(--farve4);
+  background-color: var(--farve5);
 }
 
 /* magazine letter */
