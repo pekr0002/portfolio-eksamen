@@ -6,6 +6,7 @@ header {
   align-items: center;
   padding: 20px;
   background-color: var(--sort);
+  z-index: 10;
 }
 
 .logo a {
