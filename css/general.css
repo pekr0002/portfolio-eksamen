@@ -13,6 +13,7 @@ img {
 /* general css */
 html {
   scroll-behavior: smooth;
+  transition: 0.6s;
   /* css variabler */
   --sort: #231f20;
   --hvid: #f4f3ea;
@@ -85,7 +86,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: radial-gradient(rgb(230, 100, 101), #9198e5);
   transform-origin: 50px 50px;
   background-size: 400% 400%;

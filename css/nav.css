@@ -13,6 +13,7 @@ header {
   font-size: 24px;
   font-family: "MagazineLetter", sans-serif;
   color: var(--hvid);
+  letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -98,12 +99,12 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: #ffffff;
+    background-color: var(--sort);
     position: absolute;
-    top: 94px;
+    top: 67px;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
   }
 
   nav.active .menu li {
