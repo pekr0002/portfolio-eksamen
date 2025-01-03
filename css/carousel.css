@@ -30,15 +30,9 @@
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
-  padding: 16px;
+  width: 100px;
   margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
   transition: 0.3s ease;
-
-  user-select: none;
 }
 
 /* Position the "next button" to the right */
