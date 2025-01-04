@@ -15,7 +15,7 @@ html {
   scroll-behavior: smooth;
   transition: 0.6s;
   /* css variabler */
-  --sort: #3b3537;
+  --sort: #231f20;
   --hvid: #f4f3ea;
   --farve1: #cb748d;
   --farve2: #9794dd;
@@ -40,10 +40,6 @@ section {
   padding: 40px 20px;
 }
 
-p {
-  margin: 10px 10px;
-}
-
 h1 {
   font-family: "Alatsi", sans-serif;
   font-size: 48px;
@@ -61,10 +57,28 @@ h3 {
   font-size: 25px;
 }
 
+p {
+  margin: 10px 10px;
+}
+
+p a {
+  color: var(--farve1);
+  padding: 0px;
+  transition: 0.3s;
+  font-family: "roboto", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: none;
+}
+p a:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
 a {
   padding: 10px;
   color: var(--hvid);
-  transition: color 0.3s;
+  transition: 0.3s;
   text-align: start;
   font-family: "roboto", sans-serif;
   font-size: 24px;
@@ -90,8 +104,8 @@ a {
   filter: grayscale(100%);
 }
 
-/* index */
-/* hero */
+/* --index-- */
+/* -hero- */
 #hero {
   height: 95vh;
   display: flex;
@@ -113,10 +127,17 @@ a {
     background-position: 50% 50%;
   }
 }
+#hero {
+  margin-top: 0px;
+}
 
+#hero_pil {
+  height: 99px;
+}
+/* 
 .left {
   justify-content: left;
-}
+} */
 #hero h1 {
   text-align: center;
   font-family: "MagazineLetter", sans-serif;
@@ -128,6 +149,9 @@ a {
 #hero .knap {
   margin-top: 75px;
 }
+/* -hero slut- */
+
+/* --Index slut-- */
 .knap {
   padding: 10px;
   background-color: var(--sort);
@@ -215,6 +239,6 @@ dt {
     font-size: 25px;
   }
   h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }

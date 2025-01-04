@@ -21,6 +21,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
 
+    <link rel="stylesheet" href="https://use.typekit.net/vwl0yds.css" />
+
     <title>Forside</title>
   </head>
   <body>
@@ -31,9 +33,19 @@
       <nav>
         <ul class="menu">
           <li><a href="index.html">Forside</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li id="portfolio_menu">
+            <a href="portfolio.html">Portfolio</a>
+            <ul class="undermenu">
+              <li><a href="portfolio.html#t1">Introuge</a></li>
+              <li><a href="portfolio.html#t2">Web</a></li>
+              <li><a href="portfolio.html#t3">UX/UI</a></li>
+              <li><a href="portfolio.html#t4">Animation</a></li>
+              <li><a href="portfolio.html#t5">Indhold</a></li>
+            </ul>
+          </li>
           <li><a href="om_mig.html">Om mig</a></li>
         </ul>
+
         <div class="burger">
           <div class="line"></div>
           <div class="line"></div>
@@ -46,11 +58,21 @@
         <h1>Portfolio</h1>
         <h2>2024</h2>
         <div class="center">
-          <button class="knap" onclick="location.href='#mini_display'">let's start</button>
+          <a href="#mig"><img src="img/pil2d.svg" alt="" id="hero_pil" /></a>
         </div>
       </div>
     </section>
     <main>
+      <section id="mig" class="grid_1-1">
+        <div class="col1">
+          <h2>Jeg er Penny</h2>
+          <p class="intro">jeg er en multimediedesign studerende på Københavns erhvervsakademi. Og det her er <a href="portfolio.html">mit portfolio</a></p>
+          <button class="knap" onclick="location.href='om_mig.html'">om mig</button>
+        </div>
+        <div class="col2">
+          <img src="img/me.png" alt="" />
+        </div>
+      </section>
       <section id="mini_display" class="grid_1-1">
         <div class="col1">
           <h2>det har jeg lavet</h2>
@@ -62,34 +84,33 @@
           <div class="slideshow-container">
             <div class="mySlides">
               <div class="numbertext">1 / 5</div>
-              <a href="tema/t1.html"> <img src="img/t1_thumbnail.jpeg" alt="" /></a>
-
+              <a href="t1.html"> <img src="img/t1_thumbnail.jpeg" alt="Skærmbillede fra Introuge projektet" /></a>
               <div class="text">Introuge</div>
             </div>
 
             <div class="mySlides">
               <div class="numbertext">2 / 5</div>
-              <a href="tema/t2.html"> <img src="img/SCR-20250102-nxer.png" alt="" /></a>
+              <a href="t2.html"> <img src="img/SCR-20250102-nxer.png" alt="Skærmbillede fra grundlæggende web forløb" /></a>
 
               <div class="text">Grundlæggende Web</div>
             </div>
 
             <div class="mySlides">
               <div class="numbertext">3 / 5</div>
-              <a href="tema/t3.html"> <img src="img/SCR-20250102-nzeb.jpeg" alt="" /></a>
+              <a href="t3.html"> <img src="img/SCR-20250102-nzeb.jpeg" alt="Skærmbillede fra grundlæggende UX/UI forløb" /></a>
               <div class="text">Grundlæggende UX/UI</div>
             </div>
 
             <div class="mySlides">
               <div class="numbertext">4 / 5</div>
-              <a href="tema/t4.html"> <img src="img/SCR-20250102-nzsa.png" alt="" /></a>
+              <a href="t4.html"> <img src="img/SCR-20250102-nzsa.png" alt="Skærmbillede fra grundlæggende animation forløb" /></a>
 
               <div class="text">Grundlæggende Animation</div>
             </div>
 
             <div class="mySlides">
               <div class="numbertext">5 / 5</div>
-              <a href="tema/t5.html"> <img src="img/SCR-20250102-oalm.jpeg" alt="" /></a>
+              <a href="t5.html"> <img src="img/SCR-20250102-oalm.jpeg" alt="Skærmbillede fra grundlæggende Web forløb" /></a>
               <div class="text">Grundlæggende Indhold</div>
             </div>
 
@@ -109,17 +130,6 @@
 
         <div class="col2 left">
           <button class="knap" onclick="location.href='portfolio.html'">Portfolio</button>
-        </div>
-      </section>
-
-      <section id="mig" class="grid_1-1 purple">
-        <div class="col1">
-          <h2>Hvem er jeg?</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores suscipit ut fugit quis ex dignissimos praesentium laudantium rem? Hic ipsa recusandae, nemo molestias sed laborum repellat. Eos harum sint suscipit?</p>
-          <button class="knap" onclick="location.href='om_mig.html'">om mig</button>
-        </div>
-        <div class="col2">
-          <img src="img/me.png" alt="" />
         </div>
       </section>
     </main>
