@@ -15,7 +15,7 @@ html {
   scroll-behavior: smooth;
   transition: 0.6s;
   /* css variabler */
-  --sort: #231f20;
+  --sort: #3b3537;
   --hvid: #f4f3ea;
   --farve1: #cb748d;
   --farve2: #9794dd;
@@ -79,6 +79,17 @@ a {
   font-size: 50px;
   text-transform: uppercase;
 }
+#portfolio img video {
+  transition: 0.5s;
+  /* height: 60%;
+  width: auto;
+  aspect-ratio: 16/9; */
+}
+#portfolio img:hover {
+  transition: 0.5s;
+  filter: grayscale(100%);
+}
+
 /* index */
 /* hero */
 #hero {
@@ -118,7 +129,7 @@ a {
   margin-top: 75px;
 }
 .knap {
-  padding: 10px 5px;
+  padding: 10px;
   background-color: var(--sort);
   color: var(--hvid);
   font-family: "Alatsi", sans-serif;
@@ -126,7 +137,7 @@ a {
   text-transform: uppercase;
   cursor: pointer;
   text-align: center;
-  margin: 5px 0px;
+  margin: 10px;
   border: none;
   transition: 0.3s;
 }
