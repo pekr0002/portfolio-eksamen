@@ -23,4 +23,7 @@ footer a {
   text-decoration: underline;
   font-size: 20px;
 }
+footer a:hover {
+  text-decoration: underline wavy 2px;
+}
 /* FOOTER SLUT */
