@@ -4,22 +4,29 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: var(--sort);
+  /* padding: 20px; */
+  background-color: #f4f3ea87;
   z-index: 10;
 }
 
 .logo a {
   font-size: 24px;
   font-family: "MagazineLetter", sans-serif;
-  color: var(--hvid);
+  color: var(--sort);
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
 }
-.logo img {
-  width: 50px;
-  height: 50px;
+.undermenu {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f3ea87;
+}
+
+#portfolio_menu:hover .undermenu {
+  display: block;
 }
 
 nav {
@@ -38,25 +45,28 @@ nav {
   margin-right: 20px;
 }
 
-.menu li:last-child {
+.menu > li:last-child {
   margin-right: 0;
 }
 
-.menu a {
+.menu a,
+.undermenu a {
   display: block;
   padding: 10px;
-  color: var(--hvid);
+  color: var(--sort);
   transition: color 0.3s;
   text-align: end;
   font-family: "roboto", sans-serif;
   font-size: 24px;
-  text-decoration: underline;
+  /* text-decoration: underline;
+  text-decoration-style: wavy; */
+  text-decoration: underline wavy 2px;
   text-transform: uppercase;
 }
 
-.menu a:hover {
-  color: var(--farve1);
-  text-decoration: none;
+.menu a:hover,
+.undermenu a:hover {
+  text-decoration: underline 2px;
 }
 
 .burger {
@@ -68,13 +78,20 @@ nav {
 .burger .line {
   width: 100%;
   height: 2px;
-  background-color: var(--farve1);
+  background-color: var(--sort);
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
 .burger {
   display: none;
 }
+@media screen and (min-width: 801px) {
+  .undermenu {
+    position: absolute;
+    top: 49px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .menu {
     display: none;
@@ -97,9 +114,13 @@ nav {
     transition: 0.2s linear;
   }
 
+  .undermenu {
+    display: block;
+  }
+
   nav.active .menu {
     display: block;
-    background-color: var(--sort);
+    background-color: var(--hvid);
     position: absolute;
     top: 67px;
     left: 0;
@@ -107,11 +128,13 @@ nav {
     z-index: 2;
   }
 
-  nav.active .menu li {
+  nav.active .menu li,
+  nav.active .undermenu li {
     margin: 10px 20px;
   }
 
-  nav.active .menu a {
+  nav.active .menu a,
+  nav.active .undermenu a {
     font-size: 24px;
   }
 }
