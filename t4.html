@@ -51,27 +51,99 @@
       </nav>
     </header>
     <main>
-      <h1>Tema 4 - Animation</h1>
-      <h2>Tema beskivelse</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci qui, nihil nobis repudiandae, alias ab, ratione libero voluptas nemo cum quod saepe sit dolorum eius corporis reiciendis placeat voluptatibus! Ducimus?</p>
-      <div class="grid_1-1">
+      <section>
+        <h1>Tema 4 - Animation</h1>
+        <div class="grid_1-1">
+          <div>
+            <h2>Tema beskivelse</h2>
+            <p>I tema 4: Animation blev jeg introduceret til programmeringssproget JavaScript, og hvordan man kan arbejde med det. De opgaver som jeg har haft lavet har været primært baseret på animation ved at give og fjerne klasser til forskellige elementer. Derudover har jeg også haft arbejdet med Adobe illustrator og kort introduktion til Adobe audition.</p>
+          </div>
+          <div class="programmer">
+            <img src="img/illustrator_logo.webp" alt="" />
+            <img src="img/audition_logo.webp" alt="" />
+            <img src="img/git_logo.webp" alt="" />
+            <img src="img/github_logo.webp" alt="" />
+            <img src="img/draw-io.webp" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- showcase af projekt opgaven -->
+      <section class="green">
+        <div class="grid_2-1">
+          <div>
+            <h3>Spil</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, deleniti explicabo a saepe esse commodi vitae debitis doloribus numquam labore id, aliquid laboriosam error consectetur nihil, blanditiis cupiditate sunt tempora!</p>
+          </div>
+          <a class="knap" href="https://pennyvera.dk/kea/04_animation/website/index.html" target="_blank" rel="noopener noreferrer">se projekt</a>
+        </div>
+        <img src="img/t4_bamse.png" alt="" />
+      </section>
+
+      <!-- reflektion af tema -->
+      <section class="grid_1-1">
         <div class="col1">
-          <h2>hvad har jeg lært</h2>
+          <h3>hvad har jeg lært</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nostrum repellat laudantium inventore iusto ipsum reiciendis sed, sit eligendi excepturi, ullam voluptas perferendis dolorum ea pariatur ut, qui quae quis.</p>
         </div>
         <div class="col2">
-          <h2>til en anden gang</h2>
+          <h3>til en anden gang</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repellendus porro totam rem sapiente quaerat voluptatibus impedit voluptatum odit nisi, illo earum laborum cumque ipsa voluptate fugiat corporis. Nihil, quibuªªsdam.</p>
         </div>
-      </div>
-      <div id="galleri" class="grid_1-1 pink">
-        <img src="../img/placeholder.png" alt="" />
-        <img src="../img/placeholder.png" alt="" />
-        <img src="../img/placeholder.png" alt="" />
-        <img src="../img/placeholder.png" alt="" />
-      </div>
-      <button class="knap">se projektet</button>
+      </section>
+
+      <!-- andre opgaver som jeg vil fremvise -->
+      <section id="galleri" class="pink">
+        <h3>galleri</h3>
+        <div class="grid_1-1">
+          <!-- animation 4 fra "16-animationer" -->
+          <div class="showcase_opgave">
+            <div class="animation">
+              <div id="ball_4" class="ball pattern"></div>
+            </div>
+            <h4>CSS animation</h4>
+            <p>Cirklen bevæger sig rundt i et fast mønster.</p>
+          </div>
+
+          <!-- effekt 4 -->
+          <div class="showcase_opgave">
+            <div class="animation">
+              <div id="screen">
+                <div id="game">
+                  <div id="game_background"></div>
+                  <div id="game_elements">
+                    <div id="green_container" class="">
+                      <div id="green_sprite" class=""></div>
+                    </div>
+                    <div id="purple_container" class="pos1">
+                      <div id="purple_sprite" class=""></div>
+                    </div>
+                  </div>
+                  <div id="game_ui"></div>
+                </div>
+              </div>
+            </div>
+            <h4>Forsvind hop</h4>
+            <p>Når man klikker på den lilla cirkel forsvinder den, derefter hopper den grønne 1 gang</p>
+          </div>
+          <div class="showcase_opgave">
+            <div class="animation">
+              <img src="../img/aktivitets_diagram.png" alt="billede af aktivitetsdiagram fra opgave 04.04.01" />
+            </div>
+            <h4>Aktivitets diagram</h4>
+            <p>Aktivitetsdiagram fra tema opgaven</p>
+          </div>
+          <div class="showcase_opgave">
+            <div class="animation">
+              <img src="../img/penny_state_machine.png" alt="billede af state machine diagram fra opgave 04.04.01" />
+            </div>
+            <h4>State machine diagram</h4>
+            <p>state machine diagram fra tema opgaven</p>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="js/forsvind_hop.js"></script>
     <footer>
       <div class="footer-indhold">
         <div class="footer-section1">
