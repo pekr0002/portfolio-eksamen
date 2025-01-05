@@ -1,10 +1,49 @@
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+.grid_2-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.programmer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.grid_1-2-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
 @media screen and (min-width: 800px) {
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 40px;
   }
 
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+  }
+
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+
+  .grid_2-2-1 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    gap: 40px;
+  }
   /* col manipulation */
   .col1 {
     grid-column: 1;
