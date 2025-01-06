@@ -1,19 +1,20 @@
-/* css reset */
+/* -------------------- CSS RESET -------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-img {
+img,
+video {
   width: 100%;
   height: auto;
   display: block;
 }
-
-/* general css */
+/* -------------------- CSS RESET SLUT -------------------- */
+/* ---------- general css ---------- */
 html {
   scroll-behavior: smooth;
-  transition: 0.6s;
+
   /* css variabler */
   --sort: #231f20;
   --hvid: #f4f3ea;
@@ -36,8 +37,7 @@ main {
 }
 
 section {
-  padding: 40px 20px;
-  margin: 20px 0px;
+  padding: 20px 10px;
 }
 
 h1 {
@@ -76,8 +76,7 @@ p a:hover {
 }
 
 a {
-  padding: 10px;
-  color: var(--hvid);
+  color: var(--sort);
   transition: 0.3s;
   text-align: start;
   font-family: "roboto", sans-serif;
@@ -86,7 +85,34 @@ a {
   text-transform: uppercase;
 }
 
-/* portfolio*/
+/* ----- baggrundsfarver ----- */
+.purple {
+  background-color: var(--farve2);
+}
+
+.green {
+  background-color: var(--farve5);
+}
+
+.green .knap:hover {
+  box-shadow: 6px 6px 0px 0px var(--farve1);
+}
+
+.pink {
+  background-color: var(--farve1);
+}
+
+.yellow {
+  background-color: var(--farve3);
+}
+.red {
+  background-color: var(--farve4);
+}
+/* ----- baggrundsfarver slut----- */
+
+/* ---------- general css slut ---------- */
+
+/* ---------- portfolio ----------*/
 .tema_nr {
   text-align: right;
   font-family: "MagazineLetter", sans-serif;
@@ -100,9 +126,10 @@ a {
   transition: 0.5s;
   filter: grayscale(100%);
 }
+/* ---------- portfolio slut ---------- */
 
-/* --index-- */
-/* -hero- */
+/* ---------- index ---------- */
+/* ----- hero ------ */
 #hero {
   height: 95vh;
   display: flex;
@@ -148,10 +175,10 @@ a {
 #hero .knap {
   margin-top: 75px;
 }
-/* -hero slut- */
+/* ----- hero slut ----- */
 
-/* --Index slut-- */
-.knap {
+.knap,
+.knap a {
   padding: 20px;
   margin: 20px;
   background-color: var(--sort);
@@ -185,55 +212,54 @@ a {
 .center {
   text-align: center;
 }
+/* ---------- Index slut ---------- */
+/* ---------- tema ---------- */
+.projekt_opgave img,
+.projekt_opgave video {
+  margin: 0 auto;
+  width: 1100px;
+}
 
-/* --tema-- */
 .showcase_opgave {
   background-color: var(--hvid);
   padding: 10px;
+  min-height: 113px;
+}
+
+.showcase_opgave img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  padding-bottom: 10px;
 }
 
 #galleri {
   padding: 20px;
 }
 
-.programmer img {
-  height: 100px;
-  width: auto;
-  aspect-ratio: 1/1;
-}
-.programmer img:hover {
-  scale: 1.2;
+/* -- værktøjer og programmer liste -- */
+.punkt {
+  margin: 5px 10px 15px 0px;
 }
 
-.pattern {
-  animation-name: pattern_kf;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+dt {
+  font-weight: 700;
 }
+/* -- værktøjer og programmer liste slut-- */
+/* ----- t3 ux/ui ----- */
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* ----- t3 ux/ui slut ----- */
 
-/* -t4 animation- */
+/* ----- t4 animation ----- */
+
 .animation_box {
   background-color: var(--hvid);
 }
 
-@keyframes pattern_kf {
-  0% {
-    translate: 0% 200%;
-  }
-  25% {
-    translate: 200% 0%;
-  }
-  50% {
-    translate: 0% -200%;
-  }
-  75% {
-    translate: -200% 0%;
-  }
-  100% {
-    translate: 0% 200%;
-  }
-}
 .animation {
   background-color: var(--hvid);
   width: 100%;
@@ -241,25 +267,47 @@ a {
   position: relative;
   overflow: hidden;
 }
+/* animation pattern*/
+.pattern {
+  animation-name: pattern_kf;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes pattern_kf {
+  0% {
+    transform: translate(0%, 200%);
+  }
+  25% {
+    transform: translate(200%, 0%);
+  }
+  50% {
+    transform: translate(0%, -200%);
+  }
+  75% {
+    transform: translate(-200%, 0%);
+  }
+  100% {
+    transform: translate(0%, 200%);
+  }
+}
 
 .ball {
   position: absolute;
   width: 25%;
   height: 25%;
-  background-image: url(../img/yellow-ball.svg);
+  background-image: url(../img/t4_yellow-ball.svg);
   background-size: 100%;
   top: 40%;
   left: 40%;
 }
 
+/* forsvind hop */
 #screen {
   position: relative;
   width: 100%;
   aspect-ratio: 1/1;
-}
-
-#game_elements {
-  width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
@@ -277,7 +325,7 @@ a {
 #green_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(../img/green-ball.svg);
+  background-image: url(../img/t4_green-ball.svg);
   background-size: 100%;
 }
 
@@ -290,7 +338,7 @@ a {
 #purple_sprite {
   width: 100%;
   height: 100%;
-  background-image: url(../img/purple-ball.svg);
+  background-image: url(../img/t4_purple-ball.svg);
   background-size: 100%;
 }
 
@@ -340,38 +388,51 @@ a {
   }
 }
 
-/* -- tema slut -- */
+/* ----- t5 indhold ----- */
+.lottie {
+  background-color: #9198e56b;
+}
+/* ----- t5 indhold slut ----- */
+/* ---------- tema slut ---------- */
 
-/* baggrundsfarver*/
-.purple {
+/* ---------- om mig ---------- */
+#portrait {
+}
+
+.skill-bar {
+  background-color: var(--sort);
+}
+.bar {
+  height: 24px;
+
   background-color: var(--farve2);
 }
-
-.green {
-  background-color: var(--farve3);
+#skill_html {
+  width: 93%;
+}
+#skill_pp {
+  width: 43%;
 }
 
-.green .knap:hover {
-  box-shadow: 6px 6px 0px 0px var(--farve1);
+#skill_ae {
+  width: 57%;
+}
+#skill_figma {
+  width: 69%;
+}
+#skill_javascript {
+  width: 64%;
 }
 
-.pink {
-  background-color: var(--farve1);
+#skill_css {
+  width: 68%;
 }
 
-.yellow {
-  background-color: var(--farve5);
+#skill_illustrator {
+  width: 73%;
 }
 
-/* om mig */
-.punkt {
-  margin: 5px 10px 15px 0px;
-}
-
-dt {
-  font-weight: 700;
-}
-
+/* ---------- om mig slut ---------- */
 /* magazine letter */
 @font-face {
   font-family: "MagazineLetter";
@@ -394,7 +455,7 @@ dt {
   #hero h2 {
     text-align: center;
     font-family: "MagazineLetter", sans-serif;
-    font-size: 10cqw;
+    font-size: 8cqw;
   }
 
   h3 {
@@ -404,5 +465,9 @@ dt {
   }
   h1 {
     font-size: 5rem;
+  }
+
+  section {
+    padding: 40px 20px;
   }
 }
