@@ -22,6 +22,7 @@ footer a {
   color: white;
   text-decoration: underline;
   font-size: 20px;
+  padding: 10px;
 }
 footer a:hover {
   text-decoration: underline wavy 2px;

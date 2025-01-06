@@ -10,6 +10,7 @@ header {
 }
 
 .logo a {
+  padding: 10px;
   font-size: 24px;
   font-family: "MagazineLetter", sans-serif;
   color: var(--sort);

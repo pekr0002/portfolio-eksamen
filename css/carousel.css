@@ -24,6 +24,7 @@
 /* Next & previous buttons */
 .prev,
 .next {
+  padding: 1cqw;
   cursor: pointer;
   position: absolute;
   top: 50%;
