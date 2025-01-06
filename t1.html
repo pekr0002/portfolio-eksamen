@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,6 +20,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
 
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
     <title>Tema 1 - Introuge</title>
   </head>
   <body>
@@ -51,27 +56,48 @@
       </nav>
     </header>
     <main>
-      <h1>Tema 1 - Introuge</h1>
-      <h2>Tema beskivelse</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci qui, nihil nobis repudiandae, alias ab, ratione libero voluptas nemo cum quod saepe sit dolorum eius corporis reiciendis placeat voluptatibus! Ducimus?</p>
-      <div class="grid_1-1">
-        <div class="col1">
-          <h2>hvad har jeg lært</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nostrum repellat laudantium inventore iusto ipsum reiciendis sed, sit eligendi excepturi, ullam voluptas perferendis dolorum ea pariatur ut, qui quae quis.</p>
+      <section>
+        <h1>Tema 1 - Introuge</h1>
+        <div class="grid_1-1">
+          <div>
+            <h2>Tema beskivelse</h2>
+            <p>Alt og alle er nye, jeg blev kastet ud i en opgave om at lave en titlesekvens uden nogen forberedelse eller programmer.</p>
+          </div>
+          <div>
+            <h3>Programmer og værktøj</h3>
+            <dl class="programmer">
+              <div class="punkt">
+                <dt>Figma</dt>
+                <dd>Design</dd>
+              </div>
+            </dl>
+          </div>
         </div>
-        <div class="col2">
-          <h2>til en anden gang</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repellendus porro totam rem sapiente quaerat voluptatibus impedit voluptatum odit nisi, illo earum laborum cumque ipsa voluptate fugiat corporis. Nihil, quibuªªsdam.</p>
+      </section>
+
+      <!-- showcase af tema opgaven -->
+      <section>
+        <div class="grid_2-1">
+          <div>
+            <h3>Ugeopgaven</h3>
+            <p>Videoen er inspireret af titlesekvensen for ”sjit happens”. Den består af en små korte klip i slowmotion samt en masse forskellige akavet situationer som man kan stå i som ny studerende på KEA</p>
+          </div>
         </div>
-      </div>
-      <div id="galleri" class="grid_1-1 pink">
-        <img src="img/placeholder.png" alt="" />
-        <img src="img/placeholder.png" alt="" />
-        <img src="img/placeholder.png" alt="" />
-        <img src="img/placeholder.png" alt="" />
-      </div>
-      <button class="knap">se projektet</button>
+        <video src="video/Sjit-happens-paa-Kea.mp4" controls></video>
+      </section>
+
+      <!-- andre opgaver som jeg vil fremvise -->
+      <section id="galleri" class="purple">
+        <h3>galleri</h3>
+
+        <div class="showcase_opgave">
+          <img src="img/visitkort.png" alt="" />
+          <h4>Præsentationskort</h4>
+          <p>Præsentationskort lavet i figma, med kort introdution til mig</p>
+        </div>
+      </section>
     </main>
+    <script src="js/forsvind_hop.js"></script>
     <footer>
       <div class="footer-indhold">
         <div class="footer-section1">

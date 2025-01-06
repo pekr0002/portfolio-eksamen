@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +20,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
 
-    <title>Tema 3 - UI UX</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <title>Tema 3 - UX/UI</title>
   </head>
   <body>
     <header>
@@ -51,27 +56,72 @@
       </nav>
     </header>
     <main>
-      <h1>Tema 3 - UI UX</h1>
-      <h2>Tema beskivelse</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci qui, nihil nobis repudiandae, alias ab, ratione libero voluptas nemo cum quod saepe sit dolorum eius corporis reiciendis placeat voluptatibus! Ducimus?</p>
-      <div class="grid_1-1">
+      <section>
+        <h1>Tema 3 - UX/UI</h1>
+        <div class="grid_1-1">
+          <div>
+            <h2>Tema beskivelse</h2>
+            <p>Temaet har omhandlet et website for et vilkårligt emne. Det som primært har været i fokus igennem temaet, var brugervenlighed og test samt hvordan man kan håndtere resultaterne.</p>
+          </div>
+          <div>
+            <h3>Programmer og værktøj</h3>
+            <dl class="programmer">
+              <div class="punkt">
+                <dt>Figma</dt>
+                <dd>Dokumentation, design og prototyper</dd>
+              </div>
+              <div class="punkt">
+                <dt>Kodning</dt>
+                <dd>HTML, CSS og JavaScript</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- showcase af emnesite opgaven -->
+      <section class="red">
+        <div class="grid_2-1">
+          <div>
+            <h3>Emnesite</h3>
+            <p>I emnesite projektet fik jeg et indblik i hvordan man kan tage højde for brugerens opfattelse af websitet. Heriblandt forskellige testmetoder, både i forhold til design og æstetik, men også forhold til layout og struktur af både hjemmeside og enkelte sider.</p>
+          </div>
+          <a class="knap" href="https://pennyvera.dk/kea/05_indhold/01_passionssite/website/" target="_blank" rel="noopener noreferrer">se projekt</a>
+        </div>
+        <img src="img/t3_thumbnail.jpeg" alt="Emnesite" />
+      </section>
+
+      <!-- reflektion af tema -->
+      <section class="grid_2-1">
         <div class="col1">
-          <h2>hvad har jeg lært</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nostrum repellat laudantium inventore iusto ipsum reiciendis sed, sit eligendi excepturi, ullam voluptas perferendis dolorum ea pariatur ut, qui quae quis.</p>
+          <h3>hvad har jeg lært</h3>
+          <p>Til enmesite opgaven endte jeg med at blive mere interesseret i funktionaliteten af sitet frem for brugervenligheden, som det eller var meningen skulle være i fokus</p>
         </div>
-        <div class="col2">
-          <h2>til en anden gang</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repellendus porro totam rem sapiente quaerat voluptatibus impedit voluptatum odit nisi, illo earum laborum cumque ipsa voluptate fugiat corporis. Nihil, quibuªªsdam.</p>
+      </section>
+
+      <!-- andre opgaver som jeg vil fremvise -->
+      <section id="galleri" class="pink">
+        <h3>galleri</h3>
+        <div class="grid_1-1">
+          <div class="showcase_opgave">
+            <iframe src="https://embed.figma.com/design/jgaztHbonfJK7i05LP6fDw/Hifi-wireframe?node-id=30-196&embed-host=share" allowfullscreen></iframe>
+            <h4>Hifi wireframe</h4>
+            <p>Hifi wireframe for emnesite</p>
+          </div>
+          <div class="showcase_opgave">
+            <iframe src="https://embed.figma.com/design/pqe9hf8NUypDf7Cct7P3kJ/Hifi-prototype?node-id=107-1604&embed-host=share" allowfullscreen></iframe>
+            <h4>Hifi prototype</h4>
+            <p>hifi prototype for emnesite</p>
+          </div>
+          <div class="showcase_opgave">
+            <img src="img/t3_styletile.png" alt="" />
+            <h4>Hifi prototype</h4>
+            <p>hifi prototype for emnesite</p>
+          </div>
         </div>
-      </div>
-      <div id="galleri" class="grid_1-1 pink">
-        <img src="../img/placeholder.png" alt="" />
-        <img src="../img/placeholder.png" alt="" />
-        <img src="../img/placeholder.png" alt="" />
-        <img src="../img/placeholder.png" alt="" />
-      </div>
-      <button class="knap">se projektet</button>
+      </section>
     </main>
+
     <footer>
       <div class="footer-indhold">
         <div class="footer-section1">
