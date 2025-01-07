@@ -30,6 +30,7 @@
     <title>Forside</title>
   </head>
   <body>
+    <!-- header -->
     <header>
       <div class="logo">
         <a href="index.html"> Penny Vera </a>
@@ -39,6 +40,7 @@
           <li><a href="index.html">Forside</a></li>
           <li id="portfolio_menu">
             <a href="portfolio.html">Portfolio</a>
+            <!-- dropdown menu -->
             <ul class="undermenu">
               <li><a href="portfolio.html#t1">Introuge</a></li>
               <li><a href="portfolio.html#t2">Web</a></li>
@@ -49,7 +51,7 @@
           </li>
           <li><a href="om_mig.html">Om mig</a></li>
         </ul>
-
+        <!-- burger menu -->
         <div class="burger">
           <div class="line"></div>
           <div class="line"></div>
@@ -57,6 +59,7 @@
         </div>
       </nav>
     </header>
+    <!-- hero section -->
     <section id="hero">
       <div>
         <h1>Portfolio</h1>
@@ -67,18 +70,22 @@
       </div>
     </section>
     <main>
+      <!-- introduktion -->
       <section id="mig" class="grid_2-2-1">
         <h2>Jeg er Penny</h2>
         <p class="intro">Jeg er en multimediedesign studerende på Københavns erhvervsakademi. Og det her er <a href="portfolio.html">mit portfolio</a></p>
         <button class="knap" onclick="location.href='om_mig.html'">om mig</button>
       </section>
+
       <div class="dotdiv"></div>
+
+      <!-- Projekter -->
       <section id="mini_display" class="grid_1-1">
         <div class="col1">
           <h2>Udforsk Mine Projekter</h2>
           <p>Dyk ned i de forskellige projekter, jeg har skabt. Hvert billede giver et glimt af min udvikling og de unikke idéer, jeg har arbejdet med.</p>
         </div>
-
+        <!-- karussel showcase af projekter -->
         <div id="showcase">
           <div class="slideshow-container">
             <div class="myImages">
@@ -113,14 +120,16 @@
               <div class="text">Grundlæggende Indhold</div>
             </div>
 
-            <!-- frem og tilbage knap -->
-
+            <!-- frem og tilbage knapper-->
+            <!-- tilbage knappen giver værdien "-1" til funktionen plusImages -->
             <a class="tilbage" onclick="plusImages(-1)">
               <img src="img/pil-venstre.svg" alt="pil til venstre" />
             </a>
+            <!-- frem knappen giver værdien "1" til funktionen plusImages -->
             <a class="frem" onclick="plusImages(1)"><img src="img/pil-højre.svg" alt="pil til højre" /></a>
           </div>
           <div class="center">
+            <!-- når en af "prikkerne" bliver klikket, bliver der skiftet til det korresponderende billede -->
             <div class="prik" onclick="currentImage(1)"></div>
             <div class="prik" onclick="currentImage(2)"></div>
             <div class="prik" onclick="currentImage(3)"></div>
@@ -133,6 +142,7 @@
         </div>
       </section>
     </main>
+    <!-- footer -->
     <footer>
       <div class="footer-indhold">
         <div class="footer-section1">
@@ -149,6 +159,7 @@
         </div>
       </div>
     </footer>
+    <!-- javascript -->
     <script src="js/carousel.js"></script>
     <script src="js/menu.js"></script>
   </body>
