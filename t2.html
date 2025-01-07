@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/layout.css" />
+
     <!-- font -->
     <!-- Alatsi -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,6 +29,7 @@
     <title>Tema 2 - Web</title>
   </head>
   <body>
+    <!-- header -->
     <header>
       <div class="logo">
         <a href="index.html"> Penny Vera </a>
@@ -37,6 +39,7 @@
           <li><a href="index.html">Forside</a></li>
           <li id="portfolio_menu">
             <a href="portfolio.html">Portfolio</a>
+            <!-- dropdown menu -->
             <ul class="undermenu">
               <li><a href="portfolio.html#t1">Introuge</a></li>
               <li><a href="portfolio.html#t2">Web</a></li>
@@ -47,7 +50,7 @@
           </li>
           <li><a href="om_mig.html">Om mig</a></li>
         </ul>
-
+        <!-- burger menu -->
         <div class="burger">
           <div class="line"></div>
           <div class="line"></div>
@@ -55,7 +58,9 @@
         </div>
       </nav>
     </header>
+
     <main>
+      <!-- introduktion til tema -->
       <section>
         <h1>Tema 2 - Web</h1>
         <div class="grid_1-1">
@@ -64,6 +69,7 @@
             <p>Introduceret til grundlæggende kode koncepter inde for html og css samt Filezilla, layoutdiagrammer, wireframes. Derudover har jeg også stiftet bekendtskab med Visual Studio Code.</p>
           </div>
           <div>
+            <!-- programmer og værktøjer brugt i temaet -->
             <h3>Programmer og værktøj</h3>
             <dl class="programmer">
               <div class="punkt">
@@ -75,7 +81,7 @@
         </div>
       </section>
 
-      <!-- showcase af Passionssite opgaven -->
+      <!-- showcase af tema opgaven -->
       <section class="green">
         <div class="grid_2-1">
           <div>
@@ -98,6 +104,7 @@
       <!-- andre opgaver som jeg vil fremvise -->
       <section id="galleri" class="yellow">
         <h3>galleri</h3>
+        <!-- grid layout 5 -->
         <div class="grid_1-1">
           <div class="showcase_opgave" id="t2-grid-opg">
             <div class="grid_4col_1-1-1-1">
@@ -107,14 +114,17 @@
               <img class="box-4" src="img/t2_2_1.webp" alt="billede 4" />
             </div>
             <h4>Grid</h4>
-            <p></p>
+            <p>jeg har i dette tema lavet diverse opgaver med grid og layout</p>
           </div>
 
+          <!-- visitkort -->
           <div class="showcase_opgave">
             <a href="https://pennyvera.dk/kea/02_web/visitkort/" target="_blank" rel="noopener noreferrer"><img src="img/t2_visitkort.webp" alt="Visitkort" /></a>
             <h4>Visitkort</h4>
             <p>visitkort med kort introduktion til af mig</p>
           </div>
+
+          <!-- Kæledyrssite -->
           <div class="showcase_opgave">
             <a href="https://pennyvera.dk/kea/02_web/kaeledyr/" target="_blank" rel="noopener noreferrer"><img src="img/t2_carlo-fernando.webp" alt="Billde af Carlo Fernando" /></a>
             <h4>Kæledyrssite</h4>
@@ -123,14 +133,16 @@
         </div>
       </section>
     </main>
-
+    <!-- footer -->
     <footer>
       <div class="footer-indhold">
+        <!-- venstre side -->
         <div class="footer-section1">
           <a href="index.html">forside</a>
           <a href="portfolio.html">portfolio</a>
           <a href="om_mig.html">om mig</a>
         </div>
+        <!-- højre side -->
         <div class="footer-section2">
           <a href="t1.html">introuge</a>
           <a href="t2.html">web</a>
@@ -140,6 +152,7 @@
         </div>
       </div>
     </footer>
+    <!-- js filer -->
     <script src="js/menu.js"></script>
   </body>
 </html>

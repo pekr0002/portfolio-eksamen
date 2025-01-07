@@ -1,17 +1,17 @@
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px;
+  gap: 15px;
 }
 .grid_2-1 {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px;
+  gap: 15px;
 }
 .grid_1-2-1 {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px;
+  gap: 15px;
 }
 
 /* specifikke grids */
@@ -26,7 +26,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 10px;
+  gap: 15px;
 }
 
 .grid_4col_1-1-1-1 img {

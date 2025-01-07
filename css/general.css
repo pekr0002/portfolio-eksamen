@@ -34,10 +34,11 @@ body {
 main {
   max-width: 1280px;
   margin: 0 auto;
+  min-height: 85vh;
 }
 
 section {
-  padding: 20px 10px;
+  padding: 15px 15px;
 }
 
 h1 {
@@ -110,28 +111,43 @@ a {
 }
 /* ----- baggrundsfarver slut----- */
 
+/* prikket divider */
+.dotdiv {
+  border-top: 3px dotted var(--sort);
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+/* knap */
+.knap,
+.knap a {
+  padding: 20px;
+  margin: 10px 0px;
+  background-color: var(--sort);
+  color: var(--hvid);
+  font-family: "Alatsi", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  transition: 0.3s;
+  width: 200px;
+  height: 60px;
+  text-decoration: none;
+}
+
+.knap:hover {
+  box-shadow: 6px 6px 0px 0px var(--farve5);
+}
+
 /* ---------- general css slut ---------- */
 
-/* ---------- portfolio ----------*/
-.tema_nr {
-  text-align: right;
-  font-family: "MagazineLetter", sans-serif;
-  font-size: 50px;
-  text-transform: uppercase;
-}
-#portfolio img video {
-  transition: 0.5s;
-}
-#portfolio img:hover {
-  transition: 0.5s;
-  filter: grayscale(100%);
-}
-/* ---------- portfolio slut ---------- */
-
 /* ---------- index ---------- */
+
 /* ----- hero ------ */
 #hero {
-  height: 95vh;
+  height: 96vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,6 +173,9 @@ a {
 
 #hero_pil {
   height: 99px;
+  width: auto;
+  aspect-ratio: 754/979;
+  margin: 0 auto;
   transition: 0.3s;
 }
 #hero_pil:hover {
@@ -171,54 +190,38 @@ a {
 #hero h2 {
   text-align: center;
   font-family: "MagazineLetter", sans-serif;
+  margin-bottom: 35px;
 }
-#hero .knap {
-  margin-top: 75px;
-}
+
 /* ----- hero slut ----- */
-
-.knap,
-.knap a {
-  padding: 20px;
-  margin: 20px;
-  background-color: var(--sort);
-  color: var(--hvid);
-  font-family: "Alatsi", sans-serif;
-  font-size: 30px;
-  text-transform: uppercase;
-  cursor: pointer;
-  text-align: center;
-  border: none;
-  transition: 0.3s;
-  width: 245px;
-  height: 73px;
-  text-decoration: none;
-}
-
-.knap:hover {
-  box-shadow: 6px 6px 0px 0px var(--farve5);
-}
 
 #mig .knap,
 #mig p {
   margin-top: 0px;
 }
 
-.dotdiv {
-  border-top: 3px dotted var(--sort);
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
 .center {
   text-align: center;
 }
 /* ---------- Index slut ---------- */
-/* ---------- tema ---------- */
-.projekt_opgave img,
-.projekt_opgave video {
-  margin: 0 auto;
-  width: 1100px;
+
+/* ---------- portfolio ----------*/
+.tema_nr {
+  text-align: right;
+  font-family: "MagazineLetter", sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
 }
+#portfolio img video {
+  transition: 0.5s;
+}
+#portfolio img:hover {
+  transition: 0.5s;
+  filter: grayscale(100%);
+}
+/* ---------- portfolio slut ---------- */
+
+/* ---------- tema ---------- */
 
 .showcase_opgave {
   background-color: var(--hvid);
@@ -244,7 +247,7 @@ a {
 dt {
   font-weight: 700;
 }
-/* -- værktøjer og programmer liste slut-- */
+
 /* ----- t3 ux/ui ----- */
 iframe {
   width: 100%;
@@ -396,9 +399,13 @@ iframe {
 /* ---------- tema slut ---------- */
 
 /* ---------- om mig ---------- */
+/* størrelse på portræt billedet */
 #portrait {
+  max-width: 450px;
+  margin: 0 auto;
 }
 
+/* skills indikator */
 .skill-bar {
   background-color: var(--sort);
 }
@@ -449,12 +456,9 @@ iframe {
 /* computer site */
 @media screen and (min-width: 800px) {
   #hero h1 {
-    text-align: center;
     font-size: 10cqw;
   }
   #hero h2 {
-    text-align: center;
-    font-family: "MagazineLetter", sans-serif;
     font-size: 8cqw;
   }
 
@@ -469,5 +473,17 @@ iframe {
 
   section {
     padding: 40px 20px;
+  }
+
+  /* knap */
+  .knap,
+  .knap a {
+    padding: 20px;
+    margin: 10px 0px;
+
+    font-family: "Alatsi", sans-serif;
+    font-size: 30px;
+    width: 245px;
+    height: 73px;
   }
 }
