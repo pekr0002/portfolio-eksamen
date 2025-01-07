@@ -31,7 +31,7 @@
   transition: 0.3s ease;
   background-color: var(--hvid);
   height: auto;
-  width: 10%;
+  width: 15%;
 }
 
 .frem {
@@ -56,15 +56,6 @@
   background-color: var(--hvid);
 }
 
-/* nummere */
-.numbertext {
-  color: var(--hvid);
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 /* prikker/indikatore til at se hvilket billede er aktuelt */
 .prik {
   cursor: pointer;
@@ -78,13 +69,4 @@
 
 #showcase .active {
   background-color: var(--farve1);
-}
-
-/* computer view */
-@media only screen and (max-width: 300px) {
-  .tilbage,
-  .frem,
-  .text {
-    font-size: 11px;
-  }
 }
