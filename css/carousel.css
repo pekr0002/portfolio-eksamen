@@ -1,3 +1,4 @@
+/* CSS dokument for billede karusselen på index.html */
 .slideshow-container img {
   width: 100%;
   height: auto;
@@ -18,7 +19,7 @@
   margin: auto;
 }
 
-/* Next & previous buttons */
+/* frem og tilbage knapper */
 .tilbage,
 .frem {
   padding: 1cqw;
@@ -33,7 +34,6 @@
   width: 10%;
 }
 
-/* Position the "next button" to the right */
 .frem {
   right: 0;
 }
@@ -56,7 +56,7 @@
   background-color: var(--hvid);
 }
 
-/* Number text (1/3 etc) */
+/* nummere */
 .numbertext {
   color: var(--hvid);
   font-size: 12px;
@@ -65,7 +65,7 @@
   top: 0;
 }
 
-/* The dots/bullets/indicators */
+/* prikker/indikatore til at se hvilket billede er aktuelt */
 .prik {
   cursor: pointer;
   height: 15px;
@@ -80,7 +80,7 @@
   background-color: var(--farve1);
 }
 
-/* On smaller screens, decrease text size */
+/* computer view */
 @media only screen and (max-width: 300px) {
   .tilbage,
   .frem,
