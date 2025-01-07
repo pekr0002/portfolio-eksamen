@@ -79,57 +79,55 @@
           <p>Dyk ned i de forskellige projekter, jeg har skabt. Hvert billede giver et glimt af min udvikling og de unikke idéer, jeg har arbejdet med.</p>
         </div>
 
-        <!-- showcase, kan bladre -->
         <div id="showcase">
           <div class="slideshow-container">
-            <div class="mySlides">
+            <div class="myImages">
               <div class="numbertext">1 / 5</div>
               <a href="t1.html"> <img src="img/t1_screenshot.webp" alt="Skærmbillede fra Introuge projektet" /></a>
               <div class="text">Introuge</div>
             </div>
 
-            <div class="mySlides">
+            <div class="myImages">
               <div class="numbertext">2 / 5</div>
               <a href="t2.html"> <img src="img/t2_screenshot.webp" alt="Skærmbillede fra grundlæggende web forløb" /></a>
 
               <div class="text">Grundlæggende Web</div>
             </div>
 
-            <div class="mySlides">
+            <div class="myImages">
               <div class="numbertext">3 / 5</div>
               <a href="t3.html"> <img src="img/t3_screenshot.webp" alt="Skærmbillede fra grundlæggende UX/UI forløb" /></a>
               <div class="text">Grundlæggende UX/UI</div>
             </div>
 
-            <div class="mySlides">
+            <div class="myImages">
               <div class="numbertext">4 / 5</div>
               <a href="t4.html"> <img src="img/t4_screenshot.webp" alt="Skærmbillede fra grundlæggende animation forløb" /></a>
 
               <div class="text">Grundlæggende Animation</div>
             </div>
 
-            <div class="mySlides">
+            <div class="myImages">
               <div class="numbertext">5 / 5</div>
-              <a href="t5.html"> <img src="img/t502_screenshot.webp" alt="Skærmbillede fra grundlæggende Web forløb" /></a>
+              <a href="t5.html"> <img src="img/t502_screenshot.webp" alt="Skærmbillede fra grundlæggende indhold forløb" /></a>
               <div class="text">Grundlæggende Indhold</div>
             </div>
 
-            <a class="prev" onclick="plusSlides(-1)">
+            <!-- frem og tilbage knap -->
+
+            <a class="tilbage" onclick="plusImages(-1)">
               <img src="img/pil-venstre.svg" alt="pil til venstre" />
             </a>
-            <a class="next" onclick="plusSlides(1)"><img src="img/pil-højre.svg" alt="pil til højre" /></a>
+            <a class="frem" onclick="plusImages(1)"><img src="img/pil-højre.svg" alt="pil til højre" /></a>
           </div>
-          <br />
-
           <div class="center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
+            <div class="prik" onclick="currentImage(1)"></div>
+            <div class="prik" onclick="currentImage(2)"></div>
+            <div class="prik" onclick="currentImage(3)"></div>
+            <div class="prik" onclick="currentImage(4)"></div>
+            <div class="prik" onclick="currentImage(5)"></div>
           </div>
         </div>
-
         <div class="col2">
           <button class="knap" onclick="location.href='portfolio.html'">Portfolio</button>
         </div>

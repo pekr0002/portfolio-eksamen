@@ -4,9 +4,6 @@
   display: block;
   object-fit: cover;
   align-self: stretch;
-  width: 100%;
-  height: auto;
-  display: block;
   aspect-ratio: 16/9;
 }
 
@@ -22,8 +19,8 @@
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+.tilbage,
+.frem {
   padding: 1cqw;
   cursor: pointer;
   position: absolute;
@@ -37,13 +34,13 @@
 }
 
 /* Position the "next button" to the right */
-.next {
+.frem {
   right: 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+.tilbage:hover,
+.frem:hover {
   background-color: var(--farve1);
 }
 
@@ -69,7 +66,7 @@
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.prik {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -85,8 +82,8 @@
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev,
-  .next,
+  .tilbage,
+  .frem,
   .text {
     font-size: 11px;
   }
